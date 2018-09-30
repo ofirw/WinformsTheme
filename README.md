@@ -40,6 +40,7 @@ Kind of CSS for Winforms.
         BackColor : Red; // KnownColor
         ForeColor : #67ffff; // HTML
         Font: Arial, 20, Bold; // By font ctor
+        FlatAppearance.BorderSize: 2; // sub-property
     }
     
 ### Variable block
