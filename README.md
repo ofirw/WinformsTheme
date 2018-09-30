@@ -72,7 +72,7 @@ Kind of CSS for Winforms.
     }
 
 ----
-See the Demo project for full working sample.
+See the [Demo](https://github.com/ofirw/WinformsTheme/tree/master/DemoApp) project for full working sample.
 
 Any contribution is welcomed!
 
