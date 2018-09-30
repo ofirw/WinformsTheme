@@ -8,6 +8,7 @@ Kind of CSS for Winforms.
     - Set via Reflection
     - Set with Constructor
     - Supports `KnownColors` and `HtmlColors`
+    - Supports Enum properties
 - Variables block definition.
 - Can include parent theme files.
 - Simple registration by windows hook
