@@ -1,0 +1,24 @@
+﻿// Some comments allowed 
+
+$Variables {
+	BackColor:Blue;
+}
+
+Control 
+{
+	AutoSize : true;
+}
+
+Form {
+	BackColor: @BackColor;
+}
+
+Button 
+{
+	BackColor : Red;
+	Font: Arial, 16, Regular;
+
+	.BTN { BackColor: Yellow; }
+	#btn2 { BackColor: #676767;}
+}
+
