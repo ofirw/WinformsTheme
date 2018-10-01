@@ -27,8 +27,8 @@
         public static readonly Parser<char, string> Identifier = Letter.Then(LetterDigitOrUnderScore.ManyString(), (a, b) => a + b).Between(SkipWhitespaces);
 
         public static readonly Parser<char, string> StringValue =
-            LetterDigitOrUnderScore.Or(Char('@')).Or(Char('#'))
-            .Then(LetterDigitOrUnderScore.Or(Whitespace).Or(Char(',')).ManyString(), (a, b) => a + b)
+            Try(AnyCharExcept('"').ManyString().Between(Char('"')))
+            .Or(AnyCharExcept(';').ManyString())
             .Between(SkipWhitespaces).Select(s => s.Trim());
 
         public static readonly Parser<char, Property> Attribute =

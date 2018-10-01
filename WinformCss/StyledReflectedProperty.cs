@@ -45,7 +45,7 @@ namespace WinformsTheme
             {
                 SetColor(args[0]);
             }
-            else if (propertyType.IsPrimitive)
+            else if (propertyType.IsPrimitive || propertyType.IsAssignableFrom(typeof(string)))
             {
                 var primitive = Convert.ChangeType(args[0], propertyType);
                 this.SetValueCore(primitive);

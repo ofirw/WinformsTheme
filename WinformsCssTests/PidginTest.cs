@@ -87,6 +87,9 @@ namespace WinformsLessCssTests
             AssertParsedStringIsExpected(parser, "ABC_123", " ABC_123 ");
             AssertParsedStringIsExpected(parser, "123ABC", " 123ABC ");
             AssertParsedStringIsExpected(parser, "@ABC123", "@ABC123");
+            AssertParsedStringIsExpected(parser, "(*&^%$ TERTRE", "(*&^%$ TERTRE");
+            AssertParsedStringIsExpected(parser, "123", "123;456");
+            AssertParsedStringIsExpected(parser, "123;456", "\"123;456\"");
         }
 
         [Fact]

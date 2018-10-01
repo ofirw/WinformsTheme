@@ -19,6 +19,6 @@ Button
 	Font: Arial, 16, Regular;
 
 	.BTN { BackColor: Yellow; }
-	#btn2 { BackColor: #676767;}
+	#btn2 { BackColor: #676767; Text: -> #btn2;}
 }
 
