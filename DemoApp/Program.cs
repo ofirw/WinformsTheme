@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinformsTheme;
 
-namespace DemoApp
+namespace WinformsDemoApp
 {
     static class Program
     {

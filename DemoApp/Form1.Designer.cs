@@ -1,4 +1,4 @@
-﻿namespace DemoApp
+﻿namespace WinformsDemoApp
 {
     partial class Form1
     {
