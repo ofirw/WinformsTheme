@@ -76,6 +76,11 @@ Kind of CSS for Winforms.
 ----
 See the [Demo](https://github.com/ofirw/WinformsTheme/tree/master/DemoApp) project for full working sample.
 
+### Todo
+
+- Adapt to WPF and UWP
+- Support events (such as OnEnter, OnLeave...)
+
 Any contribution is welcome!
 
 *Theme format inspired by https://github.com/paradoxlost/ux*
