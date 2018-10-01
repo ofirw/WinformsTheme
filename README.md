@@ -76,6 +76,6 @@ Kind of CSS for Winforms.
 ----
 See the [Demo](https://github.com/ofirw/WinformsTheme/tree/master/DemoApp) project for full working sample.
 
-Any contribution is welcomed!
+Any contribution is welcome!
 
 *Theme format inspired by https://github.com/paradoxlost/ux*
