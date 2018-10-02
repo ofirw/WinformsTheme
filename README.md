@@ -81,6 +81,7 @@ See the [Demo](https://github.com/ofirw/WinformsTheme/tree/master/DemoApp) proje
 - Adapt to WPF and UWP
 - Support events (such as OnEnter, OnLeave...)
 - Apply selectors by order - by type -> by class -> by name;
+- With hooking - make sure to handle controls that were created after the form has been shown.
 
 Any contribution is welcome!
 
