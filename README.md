@@ -65,14 +65,14 @@ Kind of CSS for Winforms.
     }
     
 ### Registration
-
-    // Program.cs
-    var theme = WinformsThemeLoader.Load("sample.theme");
-    using (ThemeHooker.HookTheme(theme))
-    {
-        Application.Run(new Form1());
-    }
-
+```csharp
+// Program.cs
+var theme = WinformsThemeLoader.Load("sample.theme");
+using (ThemeHooker.HookTheme(theme))
+{
+    Application.Run(new Form1());
+}
+```
 ----
 See the [Demo](https://github.com/ofirw/WinformsTheme/tree/master/DemoApp) project for full working sample.
 
