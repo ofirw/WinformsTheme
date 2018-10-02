@@ -80,6 +80,7 @@ See the [Demo](https://github.com/ofirw/WinformsTheme/tree/master/DemoApp) proje
 
 - Adapt to WPF and UWP
 - Support events (such as OnEnter, OnLeave...)
+- Apply selectors by order - by type -> by class -> by name;
 
 Any contribution is welcome!
 
