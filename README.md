@@ -22,11 +22,11 @@ Kind of CSS for Winforms.
     #button1 { .... }
     
 ### Selector by class
+```csharp
+this.button1.Tag = "Btn"; // <-- in the code
 
-     this.button1.Tag = "Btn"; // <-- in the code
-    
-    .Btn { ... }
-
+.Btn { ... }
+```    
 ### Nested selectors
 
     Panel
