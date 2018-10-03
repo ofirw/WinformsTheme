@@ -76,7 +76,7 @@ using (ThemeHooker.HookTheme(theme))
 ----
 See the [Demo](https://github.com/ofirw/WinformsTheme/tree/master/DemoApp) project for full working sample.
 
-### Todo
+### Todo & Ideas
 
 - Adapt to WPF and UWP
 - Support events (such as OnEnter, OnLeave...)
@@ -85,6 +85,7 @@ See the [Demo](https://github.com/ofirw/WinformsTheme/tree/master/DemoApp) proje
 - Tool for editing the theme file
 - Setting images
 - Set the cursor icon
+- Convertor tool to CSS
 
 Any contribution is welcome!
 
