@@ -82,6 +82,9 @@ See the [Demo](https://github.com/ofirw/WinformsTheme/tree/master/DemoApp) proje
 - Support events (such as OnEnter, OnLeave...)
 - Apply selectors by order - by type -> by class -> by name;
 - With hooking - make sure to handle controls that were created after the form has been shown.
+- Tool for editing the theme file
+- Setting images
+- Set the cursor icon
 
 Any contribution is welcome!
 
