@@ -110,5 +110,24 @@ namespace WinformsThemeTests
 
             Assert.Equal(ColorTranslator.FromHtml(htmlColor), form.BackColor);
         }
+
+        [Fact]
+        public void ThemeWithInlude()
+        {
+            IWinformThemeElement variables = new VariableBlock(new[] { new Property("colorOfSky", "Blue") });
+            IWinformThemeElement selector = new SelectorBlock("Form", new[] { new Property("BackColor", "@colorOfSky") });
+            var theme = new Theme(new[] { variables, selector });
+            var theme2 = new Theme(new[] { new SelectorBlock("Button", new[] { new Property("BackColor", "Yellow") }) });
+            theme.IncludeThemes.Add(theme2);
+            var form = new TestForm { BackColor = Color.Black };
+            form.button1.BackColor = Color.Black;
+            form.button2.BackColor = Color.Black;
+
+            theme.ApplyTheme(form);
+
+            Assert.Equal(Color.Blue, form.BackColor);
+            Assert.Equal(Color.Yellow, form.button1.BackColor);
+            Assert.Equal(Color.Yellow, form.button2.BackColor);
+        }
     }
 }

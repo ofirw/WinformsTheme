@@ -76,6 +76,7 @@ namespace WinformsLessCssTests
             var parser = PidginWinformThemeParsers.Identifier;
             AssertParsedStringIsExpected(parser, "ABC123", "ABC123");
             AssertParsedStringIsExpected(parser, "ABC_123", " ABC_123 ");
+            AssertParsedStringIsExpected(parser, "ABC.AB", "ABC.AB ");
             Assert.Throws<ParseException>(() => parser.ParseOrThrow("123ABC"));
         }
 
