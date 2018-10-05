@@ -18,7 +18,13 @@ namespace WinformsTheme
         public IEnumerable<SelectorBlock> Selectors { get; }
         public VariableBlock Variables { get; }
 
-        public void ApplyTheme(Control controlToApply) => this.ApplyTheme(controlToApply, this.Selectors);
+        public void ApplyTheme(Control controlToApply)
+        {
+            foreach (var theme in this.IncludeThemes.Concat(new[] { this }))
+            {
+                theme.ApplyTheme(controlToApply, theme.Selectors);
+            }
+        }
 
         private void ApplyTheme(Control controlToApply, IEnumerable<SelectorBlock> selectors)
         {

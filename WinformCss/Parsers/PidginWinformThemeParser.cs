@@ -9,7 +9,7 @@
 
     public static class PidginWinformThemeParsers
     {
-        private static readonly Parser<char, char> LetterDigitOrUnderScore = LetterOrDigit.Or(Char('_'));
+        private static readonly Parser<char, char> LetterDigitOrUnderScoreOrPoint = LetterOrDigit.Or(Char('_')).Or(Char('.'));
         private static readonly Parser<char, char> Colon = Char(':').Between(SkipWhitespaces);
         private static readonly Parser<char, char> SemiColon = Char(';').Between(SkipWhitespaces);
         private static readonly Parser<char, char> BeginBlock = Char('{').Between(SkipWhitespaces);
@@ -24,7 +24,7 @@
             .Then(BlockOf(AttributeOrSelector.Between(SkipWhitespaces)), (name, block) => new SelectorBlock(name, block))
             .Between(SkipWhitespaces);
 
-        public static readonly Parser<char, string> Identifier = Letter.Then(LetterDigitOrUnderScore.ManyString(), (a, b) => a + b).Between(SkipWhitespaces);
+        public static readonly Parser<char, string> Identifier = Letter.Then(LetterDigitOrUnderScoreOrPoint.ManyString(), (a, b) => a + b).Between(SkipWhitespaces);
 
         public static readonly Parser<char, string> StringValue =
             Try(AnyCharExcept('"').ManyString().Between(Char('"')))
